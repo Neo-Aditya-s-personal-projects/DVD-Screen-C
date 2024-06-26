@@ -29,7 +29,7 @@ int main(void) {
 	SDL_SetWindwFullscreen(win, SDL_WINDOW_FULLSCREEN);
 	SDL_Surface* surf = SDL_LoadBMP("DVDLogo.bmp");
 	if (!surf) {
-		fprintf(stderr, "Error: Unable to Load Image. \n"
+		fprintf(stderr, "Error: Unable to Load Image. \n");
 		SDL_DestroyRenderer(rend);
 		SDL_DestroyWindow(win);
 		SDL_Quit();
